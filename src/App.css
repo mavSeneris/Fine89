@@ -151,6 +151,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 50px;
 }
 
 
@@ -162,9 +163,12 @@ nav {
   margin: 10px;
   border-right: 2px solid var(--color-secodary);
   transition: color 0.3s ease-in-out;
+  transition: font-size 0.2s ease-in-out;
+
 }
 
 .nav--links > a:hover{
+  font-size: 1.1rem;
   color: var(--color-accent);
 }
 
