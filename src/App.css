@@ -1,0 +1,62 @@
+:root {
+  /* Color Palette */
+  --color-primary: #0B455B;
+  --color-secodary: #01162F;
+  --color-neutral: #DEDFDE;
+  --color-accent: #D2594B;
+  --color-neutral-secondary: #E0E7D5;
+
+  /* Typography */
+  --font-main: 'Inter', sans-serif;
+  --font-header: 'Frank Ruhl Libre', serif;
+  --font-sub-header: 'Kodchasan', sans-serif;
+
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section{
+  padding: 20px;
+}
