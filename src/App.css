@@ -20,7 +20,6 @@
   --fs-sub-title: 1rem;
   /* Font-weight */
   --fw-title: 700;
-
 }
 
 html {
@@ -118,7 +117,8 @@ section {
 
 .header--title>h1 {
   white-space: nowrap;
-  max-width: 100%; /* Adjust the value as needed */
+  max-width: 100%;
+  /* Adjust the value as needed */
   font-family: var(--ff-title);
   color: var(--color-primary);
   font-weight: var(--fw-title);
@@ -139,11 +139,26 @@ section {
   padding-bottom: 2px;
 }
 
+
+
 nav {
   display: flex;
   width: 100%;
   border-top: 3px solid var(--color-secodary);
   border-bottom: 3px solid var(--color-secodary);
+}
+
+.navbar {
+  position: relative;
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
 }
 
 .nav--links {
@@ -157,7 +172,7 @@ nav {
 }
 
 
-.nav--links > a{
+.nav--links>a {
   width: 100%;
   text-align: center;
   text-decoration: none;
@@ -168,15 +183,13 @@ nav {
   transition: font-size 0.1s ease-out;
 }
 
-.nav--links > a:hover{
+.nav--links>a:hover {
   font-size: 1.1rem;
   color: var(--color-accent);
 }
 
-.nav--links > a:last-child{
+.nav--links>a:last-child {
   border: none;
 }
 
 /** Hero */
-
-
