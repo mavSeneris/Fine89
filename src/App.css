@@ -159,7 +159,7 @@ nav {
   text-decoration: none;
   color: var(--color-secodary);
   margin: 10px;
-  border-right: 1px solid var(--color-secodary);
+  border-right: 2px solid var(--color-secodary);
 }
 
 .nav--links > a:last-child{
