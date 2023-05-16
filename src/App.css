@@ -1,18 +1,26 @@
 :root {
-  /* Color Palette */
+  /** Color Palette */
   --color-primary: #0B455B;
   --color-secodary: #01162F;
   --color-neutral: #DEDFDE;
   --color-accent: #D2594B;
   --color-neutral-secondary: #E0E7D5;
 
-  /* Typography */
-  --font-main: 'Inter', sans-serif;
-  --font-header: 'Frank Ruhl Libre', serif;
-  --font-sub-header: 'Kodchasan', sans-serif;
+  /** Typography */
+  /* Fonts */
+  --ff-main: 'Inter', sans-serif;
+  --ff-title: 'Frank Ruhl Libre', serif;
+  --ff-sub-title: 'Kodchasan', sans-serif;
 
-  --font-size-base: 16px;
+  --fs-base: 16px;
   --line-height-base: 1.5;
+  /* Font-size */
+  --fs-main: 0.8rem;
+  --fs-title: 1.2rem;
+  --fs-sub-title: 1rem;
+  /* Font-weight */
+  --fw-title: 700;
+
 }
 
 html {
@@ -27,8 +35,8 @@ html {
 }
 
 body {
-  font-family: var(--font-main);
-  font-size: var(--font-size-base);
+  font-family: var(--ff-main);
+  font-size: var(--fs-base);
   line-height: var(--line-height-base);
 }
 
@@ -57,6 +65,54 @@ img {
   height: auto;
 }
 
-section{
+/** utils */
+
+section,
+.container {
   padding: 20px;
+}
+
+.left-align {}
+
+.center {}
+
+.right-align {}
+
+/** Header */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  text-transform: uppercase;
+}
+
+.header > span{
+  font-family: var(--ff-title);
+  color: var(--color-primary);
+}
+
+.header--title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header--title>h1 {
+  font-family: var(--ff-title);
+  color: var(--color-primary);
+  font-weight: var(--fw-title);
+  font-size: 3.2rem;
+  letter-spacing: 1.3px;
+}
+
+.header--sub-title {
+  font-family: var(--ff-title);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
 }
