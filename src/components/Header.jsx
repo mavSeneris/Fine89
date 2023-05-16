@@ -5,6 +5,7 @@ import logoHouse from "../assets/images/logo-house.png"
 
 export default function Header() {
   const [date, setDate] = useState(new Date())
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
