@@ -67,16 +67,19 @@ img {
 
 /** utils */
 
-section,
-.container {
+.container{
   padding: 20px;
 }
 
-.left-align {}
+section {
+  padding: 20px;
+}
+
+/* .left-align {}
 
 .center {}
 
-.right-align {}
+.right-align {} */
 
 /** Header */
 
@@ -87,11 +90,16 @@ section,
   justify-content: center;
   border: 1px solid red;
   text-transform: uppercase;
+  height: 200px;
+  gap: 10px;
 }
 
-.header > span{
+.header>span {
   font-family: var(--ff-title);
   color: var(--color-primary);
+  font-weight: var(--fw-title);
+  font-size: 1rem;
+  word-spacing: 10px;
 }
 
 .header--title {
@@ -99,14 +107,21 @@ section,
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 70px;
+}
+
+.header--logo>img {
+  max-width: 200px;
+  padding-top: 10px;
+
 }
 
 .header--title>h1 {
   font-family: var(--ff-title);
   color: var(--color-primary);
   font-weight: var(--fw-title);
-  font-size: 3.2rem;
-  letter-spacing: 1.3px;
+  font-size: 4.5rem;
+  letter-spacing: 5px;
 }
 
 .header--sub-title {
@@ -115,4 +130,9 @@ section,
   align-items: center;
   justify-content: space-around;
   gap: 10px;
+}
+
+.header--logo-house{
+  width: 12px;
+  padding-bottom: 2px;
 }
