@@ -140,8 +140,8 @@ section {
 nav {
   display: flex;
   width: 100%;
-  border-top: 2px solid var(--color-secodary);
-  border-bottom: 2px solid var(--color-secodary);
+  border-top: 3px solid var(--color-secodary);
+  border-bottom: 3px solid var(--color-secodary);
 }
 
 .nav--links {
