@@ -117,6 +117,8 @@ section {
 }
 
 .header--title>h1 {
+  white-space: nowrap;
+  max-width: 100%; /* Adjust the value as needed */
   font-family: var(--ff-title);
   color: var(--color-primary);
   font-weight: var(--fw-title);
@@ -174,4 +176,7 @@ nav {
 .nav--links > a:last-child{
   border: none;
 }
+
+/** Hero */
+
 
