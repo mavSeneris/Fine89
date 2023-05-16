@@ -62,7 +62,13 @@ export default function Header() {
 
 
       <nav>
+        <div className='nav--links'>
+          <a href='#'>About</a>
+          <a href='#'>Product</a>
+          <a href='#'>Gallery</a>
+          <a href='#'>Reviews</a>
 
+        </div>
       </nav>
     </div>
   )
