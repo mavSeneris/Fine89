@@ -153,6 +153,7 @@ nav {
   align-items: center;
 }
 
+
 .nav--links > a{
   width: 100%;
   text-align: center;
@@ -160,8 +161,14 @@ nav {
   color: var(--color-secodary);
   margin: 10px;
   border-right: 2px solid var(--color-secodary);
+  transition: color 0.3s ease-in-out;
+}
+
+.nav--links > a:hover{
+  color: var(--color-accent);
 }
 
 .nav--links > a:last-child{
   border: none;
 }
+
