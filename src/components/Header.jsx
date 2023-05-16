@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from "../assets/images/logo.png";
 import logoHouse from "../assets/images/logo-house.png";
-// import "../styles/Header.css";
 
 export default function Header() {
   const [date, setDate] = useState(new Date());

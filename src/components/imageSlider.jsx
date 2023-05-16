@@ -45,7 +45,7 @@ const dotStyle = {
   fontSize: "20px",
 };
 
-const ImageSlider = ({ slides }) => {
+export default function ImageSlider({ slides }){
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -90,5 +90,3 @@ const ImageSlider = ({ slides }) => {
     </div>
   );
 };
-
-export default ImageSlider;
