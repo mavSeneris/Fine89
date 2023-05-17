@@ -4,7 +4,7 @@ import logoHouse from '../assets/images/logo-house.png'
 
 export default function Contact() {
   return (
-    <section className='contact' id='#contact' style={{ border: "1px solid red" }}>
+    <section className='contact' id='#contact'>
       <div className='section--divider'>
         <div className='section--divider-line'></div>
         <img className='section--divider-image'
@@ -16,11 +16,16 @@ export default function Contact() {
       <div className='contact--sub-sections'>
         <div className='contact--section'>
           <div className='section--title'>
+          <img
+              src={logoHouse}
+              className='section--title-image'
+            />
             <h2
               className='section--title-header'
             >
               Opening Hours
             </h2>
+            
           </div>
 
         </div>
