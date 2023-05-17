@@ -100,7 +100,7 @@ section {
 
 .section--title-image {
   width: 37px;
-  padding-bottom: 5px;
+  padding-bottom: 6.56px;
 }
 
 .section--title-header {
@@ -235,12 +235,24 @@ nav {
 
 /** About */
 
-
 .about--info {
   display: flex;
 }
 
-.about--info-content>h3 {
+.about--info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-right: 3px solid var(--color-secodary);
+}
+
+
+.about--info-wrapper:last-child {
+  border: none;
+}
+
+.about--info-wrapper>h3 {
   font-family: var(--ff-main);
   font-style: normal;
   font-weight: var(--fw-title);
@@ -250,7 +262,7 @@ nav {
   padding: 15px 0;
 }
 
-.about--info-content>p {
+.about--info-wrapper>p {
   font-family: var(--ff-main);
   font-style: normal;
   font-weight: 300;
@@ -258,16 +270,66 @@ nav {
   line-height: 19px;
 }
 
-.about--info-content {
+
+
+
+/** Products */
+.products--wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  border-right: 3px solid var(--color-secodary);
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  /* gap: 40px; */
 }
 
-.about--info-content:last-child {
-  border: none;
+.products--product-detail,
+.products--lists {
+  width: 50%;
+  border: 1px solid red;
+}
+
+.products--product-detail {
+  border-right: 2.8px solid var(--color-secodary);
+  /* padding: 10px 20px; */
+}
+
+.products--product-detail-image,
+.products--product-detail-info {
+  padding: 10px 20px;
+}
+
+.products--product-detail-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://res.cloudinary.com/dsbhrb9cr/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1684214600/FINE89%20Assets/coffee-stain-2_ufqwri.jpg?_s=public-apps');
+  background-repeat: no-repeat;
+  background-position: 50% -30px;
+  transform: rotate(30deg);
+  height: 400px;
+}
+
+.products--product-detail-image>img {
+  height: 295px;
+  transform: rotate(-30deg);
+  /* padding-bottom: 20px; */
+}
+
+.products--product-detail-divider {
+  border-top: 2.8px solid var(--color-secodary)
+}
+
+.products--lists {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.products--list-info {
+  border: 2.8px solid var(--color-secodary);
+  display: flex;
+  gap: 10px;
 }
 
 
