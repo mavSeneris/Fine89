@@ -11,12 +11,11 @@ export default function Hero() {
   ];
   const containerStyles = {
     width: "100%",
-    height: "100vh",
+    height: "50vh",
     margin: "0 auto",
   };
   return (
     <section className='hero'>
-      {/* <h2>Hero section goes here</h2> */}
       <div style={containerStyles}>
         <ImageSlider slides={slides} />
       </div>

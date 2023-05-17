@@ -75,10 +75,10 @@ export default function Header() {
 
       <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
         <div className="nav--links">
-          <a href="#">About</a>
-          <a href="#">Product</a>
-          <a href="#">Gallery</a>
-          <a href="#">Reviews</a>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
         </div>
       </nav>
     </div>

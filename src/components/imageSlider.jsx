@@ -37,6 +37,7 @@ const sliderStyles = {
 const dotsContainerStyles = {
   display: "flex",
   justifyContent: "center",
+  // padding: "20px 0"
 };
 
 const dotStyle = {
@@ -45,7 +46,7 @@ const dotStyle = {
   fontSize: "20px",
 };
 
-export default function ImageSlider({ slides }){
+const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -90,3 +91,5 @@ export default function ImageSlider({ slides }){
     </div>
   );
 };
+
+export default ImageSlider;

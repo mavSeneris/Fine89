@@ -64,8 +64,7 @@ img {
   height: auto;
 }
 
-/** utils */
-
+/*TODO Utility Classes */
 .container {
   margin: 20px;
 }
@@ -74,11 +73,49 @@ section {
   padding: 20px;
 }
 
-/* .left-align {}
+.section--divider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
 
-.center {}
+.section--divider-line {
+  width: 100px;
+  border-top: 3px solid var(--color-secodary);
+}
 
-.right-align {} */
+.section--divider-image {
+  width: 45px;
+}
+
+.section--title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.section--title-image {
+  width: 45px;
+  padding-bottom: 5px;
+}
+
+.section--title-header {
+  font-family: var(--ff-title);
+  font-size: 3rem;
+  font-weight: var(--fw-title);
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-end {
+  justify-content: end;
+}
+
+
 
 /** Header */
 
@@ -192,4 +229,7 @@ nav {
   border: none;
 }
 
-/** Hero */
+/** About */
+.about {
+  border: 1px solid red;
+}
