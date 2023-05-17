@@ -232,4 +232,34 @@ nav {
 /** About */
 .about {
   border: 1px solid red;
+  height: 50vh;
 }
+
+/** Products */
+.products {
+  border: 1px solid red;
+  height: 50vh;
+}
+/** Gallery  */
+.gallery {
+  border: 1px solid red;
+  height: 50vh;
+}
+
+/** Gallery  */
+.reviews {
+  border: 1px solid red;
+  height: 50vh;
+}
+
+/** Contact */
+.contact{
+  display: flex;
+  height: 50vh;
+}
+
+.contact--section{
+  width: 100%;
+  height: 100%;
+}
+
