@@ -94,6 +94,7 @@ section {
   display: flex;
   align-items: center;
   gap: 5px;
+  padding: 20px 0;
 }
 
 .section--title-image {
@@ -113,6 +114,10 @@ section {
 
 .flex-end {
   justify-content: end;
+}
+
+.flex-self-end {
+  justify-self:end;
 }
 
 
@@ -255,11 +260,17 @@ nav {
 /** Contact */
 .contact{
   display: flex;
+  flex-direction: column;
   height: 50vh;
 }
 
 .contact--section{
+  display: flex;
   width: 100%;
   height: 100%;
+}
+
+.contact--sub-sections{
+  display: flex;
 }
 
