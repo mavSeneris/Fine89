@@ -1,7 +1,27 @@
 import React from 'react'
 import logoHouse from '../assets/images/logo-house.png'
+import data from '../data'
 
 export default function Products() {
+
+  const productElement = data.map((item) => {
+    return (
+      <div className='products--lists' key={item.id}>
+        <div className='products--lists-image'>
+          <img src={item.imageUrl} />
+        </div>
+        <div className='products--lists-details'>
+          <h3>{item.name}</h3>
+          <span>{item.type}</span>
+          <p>{item.description}</p>
+        </div>
+        <div className='product--list-price'>
+          <h3>₱<span>{item.price}</span></h3>
+        </div>
+      </div>
+    )
+  })
+
   return (
     <section className='products' id='products'>
       <div className='section--divider'>
@@ -36,53 +56,10 @@ export default function Products() {
               The Jarabacoa Organic coffee bean packaging offers a delightful blend of flavors that will captivate your taste buds. Crafted with 100% Arabica beans, this coffee promises a rich and satisfying experience. As you indulge in each sip, you'll discover notes of smooth milk chocolate that harmoniously mingle with the subtle undertones of almond and apricot. Sourced from organic farms, this coffee reflects a commitment to sustainability and quality. With Jarabacoa Organic, awaken your senses and savor the perfect balance of indulgence and natural goodness.
             </p>
           </div>
-
         </div>
-        {/* <div className='products--wrapper'> */}
-        <div className='products--lists'>
-          <div className='products--list-info'>
-            <img src='#' />
-            <h3>Jarabacoa Organic</h3>
-            <span>Natural</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div className='products--list-price'>
-              <span>₱260</span>
-            </div>
-          </div>
-
-          <div className='products--list-info'>
-            <img src='#' />
-            <h3>Jarabacoa Organic</h3>
-            <span>Natural</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div className='products--list-price'>
-              <span>₱260</span>
-            </div>
-          </div>
-
-          <div className='products--list-info'>
-            <img src='#' />
-            <h3>Jarabacoa Organic</h3>
-            <span>Natural</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div className='products--list-price'>
-              <span>₱260</span>
-            </div>
-          </div>
-
-          <div className='products--list-info'>
-            <img src='#' />
-            <h3>Jarabacoa Organic</h3>
-            <span>Natural</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div className='products--list-price'>
-              <span>₱260</span>
-            </div>
-          </div>
-
+        <div className='products--lists-card'>
+          {productElement}
         </div>
-        {/* 
-        </div> */}
       </div>
 
 

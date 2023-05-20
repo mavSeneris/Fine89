@@ -11,7 +11,7 @@ export default function Hero() {
   ];
   const containerStyles = {
     width: "100%",
-    height: "50vh",
+    height: "80vh",
     margin: "0 auto",
   };
   return (
