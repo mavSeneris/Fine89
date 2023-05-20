@@ -331,6 +331,9 @@ nav {
 }
 
 .products--product-detail-image>img {
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover; */
   height: 295px;
   transform: rotate(-30deg);
   /* padding-bottom: 20px; */

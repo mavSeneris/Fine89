@@ -5,6 +5,7 @@ export default function sampleProduct() {
     <div className='products--product-detail'>
       <div className='products--product-detail-image'>
         <img src='https://res.cloudinary.com/dsbhrb9cr/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1684214615/FINE89%20Assets/PngItem_6790971_adcvpi.jpg?_s=public-apps' />
+        {/* <img src='https://images.unsplash.com/photo-1497636577773-f1231844b336?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80'/> */}
       </div>
       <div className='products--product-detail-divider'></div>
       <div className='products--product-detail-info'>
