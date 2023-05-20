@@ -364,6 +364,7 @@ nav {
 
 .products--lists-details>p {
   font-size: 0.8rem;
+  color: var(--color-secondary);
 }
 
 .product--list-price {
@@ -375,6 +376,7 @@ nav {
 
 .product--list-price>h3>span {
   font-size: 3rem;
+  color: var(--color-primary);
 }
 
 
