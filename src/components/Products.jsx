@@ -1,19 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logoHouse from '../assets/images/logo-house.png'
+import sampleProduct from './sampleProduct'
 import data from '../data'
 
 export default function Products() {
+  const [initialProduct, setInitialProduct] = useState(sampleProduct)
+
+
+  function handleSelectItem(id) {
+    const currentProduct = data.map(item => {
+      if (id === item.id) {
+        return (
+          <div key={item.id} className='products--product-detail'>
+            <div className='products--product-detail-image'>
+              <img src={item.imageUrl} />
+            </div>
+            <div className='products--product-detail-divider'></div>
+            <div className='products--product-detail-info'>
+              <h4>{item.name}</h4>
+              <h3>₱<span>{item.price}</span></h3>
+              <span>{item.type}</span>
+              <p>
+                {item.description}
+              </p>
+            </div>
+          </div>
+        )
+      }
+    })
+    setInitialProduct(currentProduct)
+  }
 
   const productElement = data.map((item) => {
     return (
-      <div className='products--lists' key={item.id}>
+      <div onClick={() => handleSelectItem(item.id)} className='products--lists' key={item.id}>
         <div className='products--lists-image'>
           <img src={item.imageUrl} />
         </div>
         <div className='products--lists-details'>
           <h3>{item.name}</h3>
           <span>{item.type}</span>
-          <p>{item.description}</p>
+          <p>
+            {item.description.length > 100
+              ? `${item.description.substring(0, 100)}...`
+              : item.description}
+          </p>
         </div>
         <div className='product--list-price'>
           <h3>₱<span>{item.price}</span></h3>
@@ -45,18 +76,7 @@ export default function Products() {
       </div>
 
       <div className='products--wrapper'>
-        <div className='products--product-detail'>
-          <div className='products--product-detail-image'>
-            <img src='https://res.cloudinary.com/dsbhrb9cr/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1684214615/FINE89%20Assets/PngItem_6790971_adcvpi.jpg?_s=public-apps' />
-          </div>
-          <div className='products--product-detail-divider'></div>
-          <div className='products--product-detail-info'>
-            <h4>Jarabacao Organic</h4>
-            <p>
-              The Jarabacoa Organic coffee bean packaging offers a delightful blend of flavors that will captivate your taste buds. Crafted with 100% Arabica beans, this coffee promises a rich and satisfying experience. As you indulge in each sip, you'll discover notes of smooth milk chocolate that harmoniously mingle with the subtle undertones of almond and apricot. Sourced from organic farms, this coffee reflects a commitment to sustainability and quality. With Jarabacoa Organic, awaken your senses and savor the perfect balance of indulgence and natural goodness.
-            </p>
-          </div>
-        </div>
+        {initialProduct}
         <div className='products--lists-card'>
           {productElement}
         </div>
