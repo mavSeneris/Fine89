@@ -415,7 +415,6 @@ nav {
 /** Gallery */
 
 .gallery--container {
-  padding: 20px;
   /* border: 3px solid var(--color-secodary); */
   display: flex;
   justify-content: center;
@@ -427,10 +426,10 @@ nav {
   display: grid;
   grid-template-columns: repeat(5, 250px);
   grid-template-rows: repeat(5, 150px);
-  gap: 10px;
+  gap: 15px;
 }
 
-.gallery--container-grid>img{
+.gallery--container-grid>img {
   cursor: pointer;
 }
 
@@ -491,7 +490,59 @@ nav {
   object-fit: cover;
 }
 
+/** Reviews  */
 
+.reviews--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2.8px solid var(--color-secodary);
+  height: fit-content;
+}
+
+.reviews--logo{
+  width: 150px;
+  padding: 20px;
+}
+
+.reviews--users {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  margin: 20px;
+  padding-top: 50px;
+  border-top: 1px solid var(--color-secodary);
+}
+
+.reviews--users-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: center;
+  cursor: pointer;
+}
+
+.reviews--user-review{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews--user-entry{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews--user-review-text{
+  padding: 20px;
+  text-align: center;
+}
 
 /** Contact */
 .contact {
