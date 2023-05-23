@@ -16,16 +16,16 @@ export default function Gallery() {
   const GalleryEls = galleryImages.map(item => {
     return (
       <img key={item.id} src={item.imageUrl} />
-
     )
   })
-
 
   return (
     <section className='gallery' id='gallery'>
       <div className='section--divider'>
         <div className='section--divider-line'></div>
-        <img className='section--divider-image' src='https://res.cloudinary.com/dsbhrb9cr/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1684214620/FINE89%20Assets/watercolor-coffee-bean-1-300x235_o8fdce.jpg?_s=public-apps' />
+        <img className='section--divider-image'
+          src='https://res.cloudinary.com/dsbhrb9cr/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1684214620/FINE89%20Assets/watercolor-coffee-bean-1-300x235_o8fdce.jpg?_s=public-apps'
+        />
         <div className='section--divider-line'></div>
       </div>
       <div className='section--title'>
