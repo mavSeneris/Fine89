@@ -564,7 +564,7 @@ div.selected {
 .contact {
   /* flex-direction: column; */
   /* border: 1px solid orange; */
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
 }
 
@@ -597,7 +597,7 @@ div.selected {
 }
 
 .section--title-header{
-  font-family: var(--ff-main);
+  font-family: var(--ff-title);
   font-weight: 300;
   color: rgb(62, 62, 62, 85%);
   padding-left: 23px;
