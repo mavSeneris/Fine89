@@ -562,9 +562,6 @@ div.selected {
 
 /** Schedules & Contact info */
 .contact {
-  /* flex-direction: column; */
-  /* border: 1px solid orange; */
-  /* height: 100vh; */
   position: relative;
 }
 
@@ -572,6 +569,9 @@ div.selected {
 
 .sub-sections {
   display: flex;
+  margin-top: 50px;
+  border: 2px solid black;
+
 }
 
 .schedules--section,
@@ -580,7 +580,11 @@ div.selected {
   height: 762px;
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+}
+
+.schedules--section{
+  border-right: 3px solid black;
+
 }
 
 /* headers */
