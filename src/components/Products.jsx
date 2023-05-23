@@ -6,7 +6,6 @@ import data from '../data'
 export default function Products() {
   const [selectedProduct, setSelectedProduct] = useState(initialProduct)
 
-
   function handleSelectItem(id) {
     const currentProduct = data.map(item => {
       if (id === item.id) {
@@ -59,30 +58,19 @@ export default function Products() {
         <div className='section--divider-line'></div>
         <img className='section--divider-image'
           src='https://res.cloudinary.com/dsbhrb9cr/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1684214620/FINE89%20Assets/watercolor-coffee-bean-1-300x235_o8fdce.jpg?_s=public-apps'
-
         />
         <div className='section--divider-line'></div>
       </div>
       <div className='section--title flex-end'>
-        <h2
-          className='section--title-header'
-        >
-          Our Products
-        </h2>
-        <img
-          src={logoHouse}
-          className='section--title-image'
-        />
+        <h2 className='section--title-header'>Our Products</h2>
+        <img src={logoHouse} className='section--title-image'/>
       </div>
-
       <div className='products--wrapper'>
         {selectedProduct}
         <div className='products--lists-card'>
           {productElement}
         </div>
       </div>
-
-
     </section>
   )
 }

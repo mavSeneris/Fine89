@@ -499,7 +499,7 @@ nav {
   justify-content: center;
   align-items: center;
   border: 2.8px solid var(--color-secodary);
-  height: fit-content;
+  /* min-height: 700px; */
 }
 
 .reviews--logo{
@@ -508,14 +508,18 @@ nav {
 }
 
 .reviews--users {
-  width: 50%;
+  width: 70%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 70px;
-  margin: 20px;
-  padding-top: 50px;
-  border-top: 1px solid var(--color-secodary);
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 0;
+}
+
+.reviews--users-image-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reviews--users-image {
@@ -543,6 +547,17 @@ nav {
 .reviews--user-review-text{
   padding: 20px;
   text-align: center;
+  height: 250px;
+  border-bottom: 1px solid var(--color-secodary);
+
+}
+
+div.selected {
+  /* border: 5px solid var(--color-primary); */
+  box-shadow: 0 0 2px 3px var(--color-accent);
+  border-radius: 50%;
+  width: 70px; 
+  height: 70px;
 }
 
 /** Schedules & Contact info */
@@ -610,6 +625,7 @@ nav {
   align-items: center;
   gap: 7px;
 }
+
 
 .dynamic-hr {
   flex-grow: 1;
@@ -742,7 +758,6 @@ nav {
 .coffee-cup > img{
   width: 300px;
 }
-
 
 /** Footer */
 
